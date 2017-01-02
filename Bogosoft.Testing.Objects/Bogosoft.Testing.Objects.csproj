@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CelestialBody.cs" />
     <Compile Include="CelestialBodyType.cs" />
+    <Compile Include="Integer.cs" />
     <Compile Include="OrbitalInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
