@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<authors>Clayton Roth</authors>
-		<description>A collection of ready-made objects suitable for testing fake data.</description>
-		<id>Bogosoft.Testing.Objects</id>
+		<authors>$author$</authors>
+		<description>$description$</description>
+		<id>$id$</id>
+		<owners>$author$</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<version>1.0.0</version>
+		<title>$id</title>
+		<version>$version$</version>
 	</metadata>
 </package>

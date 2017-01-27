@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Bogosoft.Testing.Objects.Tests
 {
-    [TestFixture, Category("Uint")]
+    [TestFixture, Category("Unit")]
     public class UnitTests
     {
         [TestCase]

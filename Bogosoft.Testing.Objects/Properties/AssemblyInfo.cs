@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Bogosoft.Testing.Objects")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A collection of ready-made objects suitable for testing fake data. ")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Clayton Roth")]
 [assembly: AssemblyProduct("Bogosoft.Testing.Objects")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
