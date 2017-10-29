@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using Should;
 using System.Linq;
 
 namespace Bogosoft.Testing.Objects.Tests
@@ -12,9 +11,10 @@ namespace Bogosoft.Testing.Objects.Tests
         {
             var cbs = CelestialBody.All.ToArray();
 
-            cbs.ShouldNotBeEmpty();
+            Assert.That(cbs, Is.Not.Empty);
 
-            cbs.ShouldNotContain(CelestialBody.Undefined);
+            Assert.That(cbs, Does.Not.Contain(CelestialBody.Undefined));
+
         }
 
         [TestCase]
@@ -22,7 +22,7 @@ namespace Bogosoft.Testing.Objects.Tests
         {
             var ints = Integer.RandomSequence(256, -32768, 32767);
 
-            ints.Any(i => i < -32768 || i > 32767).ShouldBeFalse();
+            Assert.That(ints.Any(i => i < -32768 || i > 32767), Is.False);
         }
 
         [TestCase]
@@ -30,7 +30,7 @@ namespace Bogosoft.Testing.Objects.Tests
         {
             var ints = Integer.RandomSequence().ToArray();
 
-            ints.Length.ShouldBeGreaterThan(0);
+            Assert.That(ints.Length, Is.GreaterThan(0));
         }
     }
 }
