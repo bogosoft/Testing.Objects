@@ -9,7 +9,7 @@
 		<PackageLicenseUrl>https://raw.githubusercontent.com/bogosoft/Testing.Objects/master/LICENSE</PackageLicenseUrl>
 		<PackageProjectUrl>https://github.com/bogosoft/Testing.Objects</PackageProjectUrl>
 		<PackageReleaseNotes>Migrated to .NET Standard 2.0 while maintaing compatability with .NET Framework 4.5.2.</PackageReleaseNotes>
-		<PackageTags>testing fakes</PackageTags>
+		<PackageTags>testing fakes objects</PackageTags>
 		<RepositoryUrl>https://github.com/bogosoft/Testing.Objects</RepositoryUrl>
 		<TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
 		<Title>Bogosoft.Testing.Objects</Title>
