@@ -13,20 +13,14 @@ namespace Bogosoft.Testing.Objects
         /// </summary>
         /// <param name="int">An integer to test.</param>
         /// <returns>A value indicating whether or not the given integer is even.</returns>
-        public static bool Even(int @int)
-        {
-            return @int % 2 == 0;
-        }
+        public static bool Even(int @int) => @int % 2 == 0;
 
         /// <summary>
         /// Determine if a given integer is odd.
         /// </summary>
         /// <param name="int">An integer to test.</param>
         /// <returns>A value indicating whether or not the given integer is odd.</returns>
-        public static bool Odd(int @int)
-        {
-            return @int % 2 == 1;
-        }
+        public static bool Odd(int @int) => @int % 2 == 1;
 
         /// <summary>
         /// Filter a given sequence of integers by whether or not a sequence item is even.
