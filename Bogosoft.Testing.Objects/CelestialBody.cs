@@ -10,8 +10,20 @@ namespace Bogosoft.Testing.Objects
     /// </summary>
     public class CelestialBody : IEquatable<CelestialBody>
     {
+        /// <summary>
+        /// Compare two celestial bodies for equality.
+        /// </summary>
+        /// <param name="left">The left-hand side of the operation.</param>
+        /// <param name="right">The right-hand side of the operation.</param>
+        /// <returns>A value indicating whether or not the two given celestial bodies are equal.</returns>
         public static bool operator ==(CelestialBody left, CelestialBody right) => left?.Name == right?.Name;
 
+        /// <summary>
+        /// Compare two celestial bodies for inequality.
+        /// </summary>
+        /// <param name="left">The left-hand side of the operation.</param>
+        /// <param name="right">The right-hand side of the operation.</param>
+        /// <returns>A value indicating whether or not the two given celestial bodies are not equal.</returns>
         public static bool operator !=(CelestialBody left, CelestialBody right) => left?.Name != right?.Name;
 
         #region Pre-populated values
@@ -231,12 +243,30 @@ namespace Bogosoft.Testing.Objects
         /// </summary>
         public CelestialBodyType Type { get; set; }
 
+        /// <summary>
+        /// Compare the current celestial body with another for equality.
+        /// </summary>
+        /// <param name="other">A celestial body to compare to the current celestial body.</param>
+        /// <returns>A value indicating whether or not the current celestial body equals the given.</returns>
         public bool Equals(CelestialBody other) => Name == other?.Name;
 
+        /// <summary>
+        /// Compare the current celestial body to another object for equality.
+        /// </summary>
+        /// <param name="obj">An object to compare to the current celestial body.</param>
+        /// <returns>A value indicating whether or not the given object equals the current celestial body.</returns>
         public override bool Equals(object obj) => obj is CelestialBody ? Equals(obj as CelestialBody) : base.Equals(obj);
 
+        /// <summary>
+        /// Compure a hash code for the current celestial body.
+        /// </summary>
+        /// <returns>A computed hash code.</returns>
         public override int GetHashCode() => Name.GetHashCode();
 
+        /// <summary>
+        /// Get a human readable identifier for the current celestial body.
+        /// </summary>
+        /// <returns>The current celestial body represented by a string.</returns>
         public override string ToString() => Name;
     }
 }
