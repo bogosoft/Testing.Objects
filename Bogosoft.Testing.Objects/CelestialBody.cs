@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
@@ -7,8 +8,12 @@ namespace Bogosoft.Testing.Objects
     /// <summary>
     /// Represents a heavenly body and the (approximated) values of any of its various properties.
     /// </summary>
-    public class CelestialBody
+    public class CelestialBody : IEquatable<CelestialBody>
     {
+        public static bool operator ==(CelestialBody left, CelestialBody right) => left?.Name == right?.Name;
+
+        public static bool operator !=(CelestialBody left, CelestialBody right) => left?.Name != right?.Name;
+
         #region Pre-populated values
 
         /// <summary>
@@ -225,6 +230,12 @@ namespace Bogosoft.Testing.Objects
         /// Get or set the type of the current celestial body.
         /// </summary>
         public CelestialBodyType Type { get; set; }
+
+        public bool Equals(CelestialBody other) => Name == other?.Name;
+
+        public override bool Equals(object obj) => obj is CelestialBody ? Equals(obj as CelestialBody) : base.Equals(obj);
+
+        public override int GetHashCode() => Name.GetHashCode();
 
         public override string ToString() => Name;
     }
