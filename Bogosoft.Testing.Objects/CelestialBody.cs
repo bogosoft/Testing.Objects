@@ -23,13 +23,8 @@ namespace Bogosoft.Testing.Objects
 
                 var flags = BindingFlags.Public | BindingFlags.Static;
 
-                foreach(var pi in type.GetProperties(flags).Where(x => x.PropertyType == type))
+                foreach(var pi in type.GetProperties(flags).Where(x => x.PropertyType == type && x.Name != "Undefined"))
                 {
-                    if(pi.Name == "Undefined")
-                    {
-                        continue;
-                    }
-
                     yield return pi.GetValue(null) as CelestialBody;
                 }
             }
