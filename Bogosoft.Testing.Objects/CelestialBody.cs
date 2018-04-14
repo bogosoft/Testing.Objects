@@ -230,5 +230,7 @@ namespace Bogosoft.Testing.Objects
         /// Get or set the type of the current celestial body.
         /// </summary>
         public CelestialBodyType Type { get; set; }
+
+        public override string ToString() => Name;
     }
 }
