@@ -7,6 +7,7 @@
 		<Description>A collection of ready-made objects suitable for testing fake data.</Description>
 		<FileVersion>1.1.0</FileVersion>
 		<PackageLicenseUrl>https://raw.githubusercontent.com/bogosoft/Testing.Objects/master/LICENSE</PackageLicenseUrl>
+		<PackageId>Bogosoft.Testing.Objects</PackageId>
 		<PackageProjectUrl>https://github.com/bogosoft/Testing.Objects</PackageProjectUrl>
 		<PackageReleaseNotes>Migrated to .NET Standard 2.0 while maintaing compatability with .NET Framework 4.5.2.</PackageReleaseNotes>
 		<PackageTags>testing fakes objects</PackageTags>
